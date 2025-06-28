@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Setup and Test
+    init: ./gradlew build
+    command: ./gradlew test

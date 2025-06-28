@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // JUnit Jupiter API & Engine
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+
+    // ✅ For Parameterized Tests (like @CsvSource)
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.2'
+
+    // Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.20.0'
+}
+
+
+test {
+    useJUnitPlatform()
+}
